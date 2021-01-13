@@ -1,0 +1,2 @@
+# Captcha_NumAlphabet
+基于CNN的数字字母验证码识别训练项目pytorch版
