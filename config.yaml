@@ -1,0 +1,18 @@
+# 配置
+width: 180
+height: 100
+alphabet: 0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ
+numchar: 4
+train:
+  epoch: 200  # 遍历数据集次数
+  pre_epoch: 0  # 定义已经遍历数据集的次数
+  batch_size: 256  # 批处理尺寸(batch_size)
+  lr: 0.001  # 学习率
+  train_data: ./data/train  # 训练集路径
+  test_data: ./data/test  # 训练集路径
+  is_gpu: True  # 是否使用gpu
+  num_workers: 8  # 并行处理数据进程数，根据显存大小自定义，显存越小work数越小
+  out_model_path: ./model  #  网络模型保存地址，需写绝对路径
+test:
+  model_path: H:\pytouch_product\VerificationCode\cyg\GitHub_Captcha_NumAlphabet\dome_model.path  # 测试所用的模型路径
+  is_gpu: False  # 是否使用gpu
